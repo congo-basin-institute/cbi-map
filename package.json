@@ -24,6 +24,7 @@
   "homepage": "https://github.com/congo-basin-institute/cbi-web-maps#readme",
   "dependencies": {
     "leaflet": "^1.6.0",
+    "mapbox-gl": "^1.5.1",
     "ol": "^6.1.1"
   }
 }
