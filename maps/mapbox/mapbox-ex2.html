@@ -11,6 +11,8 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
   <style>
     body {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
       margin: 0;
       padding: 0;
     }
@@ -20,24 +22,19 @@
       width: 100vw;
     }
 
-    ;
+    #menu {
+      background: #fff;
+      padding: 10px;
+    }
 
   </style>
 </head>
 
 <body>
-  <style>
-    #menu {
-      position: absolute;
-      background: #fff;
-      padding: 10px;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-  </style>
 
   <div id='map'></div>
   <div id='menu'>
+    <h1>CBI Bastos</h1>
     <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
     <label for='streets'>streets</label>
     <input id='light-v10' type='radio' name='rtoggle' value='light'>
