@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../../css/ol.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    .map {
+      height: 100vh;
+      width: 100vw;
+    }
+
+  </style>
+
+  <title>OpenLayers v6.1.1 local host example</title>
+</head>
+
+<body>
+  <h1>CBI Bastos</h1>
+  <div id="map" class="map"></div>
+
+  <script src="../../js/ol/ol.js"></script>
+  <script type="text/javascript">
+    var map = new ol.Map({
+      target: 'map',
+      layers: [
+        new ol.layer.Tile({
+          source: new ol.source.OSM()
+        })
+      ],
+      view: new ol.View({
+        center: ol.proj.fromLonLat([11.51120, 3.89827]),
+        zoom: 19
+      })
+    });
+  </script>
+</body>
+
+</html>

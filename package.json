@@ -1,0 +1,29 @@
+{
+  "name": "cbi-web-maps",
+  "version": "1.0.0",
+  "description": "CBI Web Maps experiements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/congo-basin-institute/cbi-web-maps.git"
+  },
+  "keywords": [
+    "Cameroon",
+    "Yaounde",
+    "OpenStreetMap",
+    "Leaflet"
+  ],
+  "author": "Vincent Deblauwe and Scott Gruber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/congo-basin-institute/cbi-web-maps/issues"
+  },
+  "homepage": "https://github.com/congo-basin-institute/cbi-web-maps#readme",
+  "dependencies": {
+    "leaflet": "^1.6.0",
+    "ol": "^6.1.1"
+  }
+}
