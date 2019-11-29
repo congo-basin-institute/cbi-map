@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>CBI Bastos - Leaflet</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .map {
+      width: 100vw;
+      height: 100vh;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <h1>CBI Bastos, mapbox</h1>
+
+
+  <div id="map" class="map"></div>
+
+
+
+
+
+  <script>
+
+    mapboxgl.accessToken =
+      "pk.eyJ1Ijoic2NvdHRncnViZXIiLCJhIjoiY2szamxneDFiMGthZjNmbzM0MnM3emZrdCJ9.3h2KVTJgD22j3mIBZx7xMA";
+    var map = new mapboxgl.Map({
+      container: "map",
+      zoom: 9,
+      center: [11.51120, 3.89827],
+      style: "mapbox://styles/mapbox/satellite-v9"
+    });
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
