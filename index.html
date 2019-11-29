@@ -9,48 +9,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: minmax(0, 100px) auto;
+      grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+      max-width: var(--max-width);
+      margin: auto;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    main {
+      grid-area: main;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+  </style>
 
 </head>
 
 <body>
-  <h1>CBI Web Maps</h1>
+  <header>
+    <h1>CBI Web Maps</h1>
+  </header>
 
-  <h2>Mapbox 1.5.0</h2>
-  <ol>
-    <li><a href="maps/mapbox/mapbox-ex1.html">Example 1, CDN host, style: mapbox/satellite-v9</a>
-    </li>
-    <li><a href="maps/mapbox/mapbox-ex2.html">Example 1, CDN host, change styles</a></li>
+  <main>
+    <h2>Mapbox 1.5.0</h2>
+    <ol>
+      <li><a href="maps/mapbox/mapbox-ex1.html">Example 1, CDN host, style:
+          mapbox/satellite-v9</a>
+      </li>
+      <li><a href="maps/mapbox/mapbox-ex2.html">Example 1, CDN host, change styles</a></li>
 
-  </ol>
+    </ol>
 
-  <h2>Leaflet 1.6.1</h2>
-  <ol>
-    <li><a href="maps/leaflet/leaflet-ex1.html">Example 1, CDN host, OSM</a></li>
-    <li><a href="maps/leaflet/leaflet-ex2.html">Example 2, local host, OSM</a></li>
-    <li><a href="maps/leaflet/leaflet-ex3.html">Example 3, local host, Mapbox</a></li>
-    <li><a href="maps/leaflet/leaflet-ex2.html">Example 4, local host, Mapbox satellite view</a>
-    </li>
-  </ol>
+    <h2>Leaflet 1.6.1</h2>
+    <ol>
+      <li><a href="maps/leaflet/leaflet-ex1.html">Example 1, CDN host, OSM</a></li>
+      <li><a href="maps/leaflet/leaflet-ex2.html">Example 2, local host, OSM</a></li>
+      <li><a href="maps/leaflet/leaflet-ex3.html">Example 3, local host, Mapbox</a></li>
+      <li><a href="maps/leaflet/leaflet-ex2.html">Example 4, local host, Mapbox satellite view</a>
+      </li>
+    </ol>
 
-  <h2>Open Layers v6.1.1</h2>
-  <ol>
-    <li><a href="maps/ol/ol-ex1.html">Example 1, CDN host</a></li>
-    <li><a href="maps/ol/ol-ex1.html">Example 2, local host</a></li>
-  </ol>
+    <h2>Open Layers v6.1.1</h2>
+    <ol>
+      <li><a href="maps/ol/ol-ex1.html">Example 1, CDN host</a></li>
+      <li><a href="maps/ol/ol-ex1.html">Example 2, local host</a></li>
+    </ol>
 
-  <h2>OpenLayers v.2.13.1 (deprecated version of OpenLayers)</h2>
+    <h2>OpenLayers v.2.13.1 (deprecated version of OpenLayers)</h2>
 
-  <ol>
-    <li><a href="maps/OpenLayers/OpenLayerEx1.html">Example 1</a></li>
-    <li><a href="maps/OpenLayers/OpenLayerEx2.html">Example 2</a></li>
-    <li><a href="maps/OpenLayers/OpenLayerEx3.html">Example 3</a></li>
-    <li><a href="maps/OpenLayers/OpenLayerEx4.html">Example 4</a></li>
-    <li><a href="maps/OpenLayers/OpenLayerEx5.html">Example 5</a></li>
-    <li><a href="maps/OpenLayers/OpenLayerEx6.html">Example 6</a></li>
-  </ol>
+    <ol>
+      <li><a href="maps/OpenLayers/OpenLayerEx1.html">Example 1</a></li>
+      <li><a href="maps/OpenLayers/OpenLayerEx2.html">Example 2</a></li>
+      <li><a href="maps/OpenLayers/OpenLayerEx3.html">Example 3</a></li>
+      <li><a href="maps/OpenLayers/OpenLayerEx4.html">Example 4</a></li>
+      <li><a href="maps/OpenLayers/OpenLayerEx5.html">Example 5</a></li>
+      <li><a href="maps/OpenLayers/OpenLayerEx6.html">Example 6</a></li>
+    </ol>
 
+  </main>
   <footer>
-    <p><a href="https://github.com/congo-basin-institute/cbi-web-maps">Code available on GitHub</a>
+    <p><a href="https://github.com/congo-basin-institute/cbi-web-maps">Code on GitHub</a>
     </p>
   </footer>
 
