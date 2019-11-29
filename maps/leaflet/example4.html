@@ -26,24 +26,23 @@
 
   <h1>CBI Bastos</h1>
 
-  <div id="map" class="map"></div>
+  <div id="mapid" class="map"></div>
 
   <script src="../../js/leaflet/leaflet.js"></script>
 
   <script>
 
     // Set location of map and zoom level
-    var map = L.map('map').setView([11.51120, 3.89827], 11)
-
-    var marker = L.marker([11.51120, 3.89827]).addTo(map)
-    marker.bindPopup("<b>Hello world!</b><br>I am at CBI Bastos").openPopup();
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2NvdHRncnViZXIiLCJhIjoiY2szamxneDFiMGthZjNmbzM0MnM3emZrdCJ9.3h2KVTJgD22j3mIBZx7xMA', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
-      id: 'mapbox/satellite-v9',
-      accessToken: 'pk.eyJ1Ijoic2NvdHRncnViZXIiLCJhIjoiY2szamxneDFiMGthZjNmbzM0MnM3emZrdCJ9.3h2KVTJgD22j3mIBZx7xMA'
-    }).addTo(map);
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      id: 'mapbox/streets-v11'
+    }).addTo(mymap);
+
 
   </script>
 
