@@ -20,10 +20,14 @@
     #map {
       height: 100vh;
       width: 100vw;
+      position: absolute;
+      top: 0;
+      bottom: 0;
     }
 
     #menu {
-      background: #fff;
+      position: absolute;
+      background: var(--cbi-caribbean-green);
       padding: 10px;
     }
 
@@ -32,8 +36,8 @@
 
 <body>
 
-  <div id='map'></div>
-  <div id='menu'>
+  <div id="map"></div>
+  <div id="menu">
     <h1>CBI Bastos</h1>
     <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
     <label for='streets'>streets</label>
